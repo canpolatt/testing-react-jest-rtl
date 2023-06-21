@@ -67,3 +67,33 @@ expect(elementsArray).toHaveLength(7);
 - src/setupTests.js imports it before each test, makes matchers avaliable
 - DOM-based matchers
   - examples: toBeVisible() or toBeChecked()
+
+**Jest**
+
+- RTL helps with
+  - rendering components into virtual DOM
+  - searching virtual DOM
+  - interacting with virtual DOM
+- Needs a test runner
+  - Find tests, run them, make assertions
+- Jest
+  - is recommended by Testing Library
+  - comes with cra
+- _npm test_ runs an npm script that runs Jest in watch mode
+
+**Jest Watch Mode**
+
+- Watch for changes in files since last commit
+- Only run tests related to these files
+- No changes? No tests.
+  - Type _a_ to run all tests
+
+**How does Jest work?**
+
+- global _test_ method has two arguments:
+  - string description
+  - test function
+- Test fails if error is thrown when running function
+  - assetions throw errors when expectation fails
+- No error -> tests pass
+  - Empty test passes!
