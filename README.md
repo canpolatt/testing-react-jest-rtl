@@ -115,6 +115,23 @@ expect(elementsArray).toHaveLength(7);
 **Why TDD?**
 
 - Makes a huge difference in how it feels to write tests
-  - part of the coding process, not a "chore" to do at the end
+  part of the coding process, not a "chore" to do at the end
 - More efficient
   - Re-run tests "for free" after changes
+
+**What does React Testing Library Do?**
+
+- Creates virtual DOM for testing and utilities for interacting with DOM
+- Allows testing without a browser
+
+**Types of Tests**
+
+- Unit tests
+  - Tests one unit of code in isolation
+- Integration tests
+  - How multiple units work together
+- Functional Tests
+  - Tests a particular function of software
+  - Functional tests is that you're not testing your code, you're testing behavior
+- Acceptance / End-to-end(E2E) Tests
+  - Use actual browser and server(Cypress,Selenium)
