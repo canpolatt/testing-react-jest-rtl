@@ -97,3 +97,24 @@ expect(elementsArray).toHaveLength(7);
   - assetions throw errors when expectation fails
 - No error -> tests pass
   - Empty test passes!
+
+**TDD(Test-Driven Development)**
+
+- Write tests before writing code
+  - then write code according to "spec" set by tests
+- "red-green" testing
+
+  - Tests fail before code is written
+
+    1.Write "shell" function
+    2.Write tests
+    3.Tests fail
+    4.Write code
+    5.Tests pass
+
+**Why TDD?**
+
+- Makes a huge difference in how it feels to write tests
+  - part of the coding process, not a "chore" to do at the end
+- More efficient
+  - Re-run tests "for free" after changes
