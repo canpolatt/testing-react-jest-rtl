@@ -12,3 +12,58 @@
 - **RTL** provides a virtual DOM (Document Object Model) specifically designed for testing purposes. When running tests outside of a browser environment, having a virtual DOM enables actions like clicking elements and verifying the behavior of the virtual DOM.
 
 - **Jest**, on the other hand, is a test runner responsible for discovering tests, executing them, and determining their success or failure.
+
+## color-button project notes
+
+```
+test('renders learn react link', () => {
+  render(<App />);
+  const linkElement = screen.getByText(/learn react/i);
+  expect(linkElement).toBeInTheDocument();
+});
+
+```
+
+- **render()** method creates a virtual DOM for whatever JSX you give it as the argument here
+
+  - Create virtual DOM for argument JSX
+  - Access virtual DOM via _screen_ global
+
+- **screen.getByText()** method find an element in the DOM based on whatever text it's displaying.
+
+  - Find element by display text
+
+- **/learn react/i**
+
+  - regular expression
+  - case insensitive(i)
+  - could be string 'Learn React'
+
+- **expect.toBeInDocument()** this assertion is what causes the test to succeed or fail
+
+**Assertions**
+
+```
+  expect(linkElement).toBeInTheDocument();
+
+```
+
+- **expect** Jest global, starts the assertion
+- **expect argument** subject of the assertion
+- **matcher** type of assertion, this matcher comes from Jest-DOM
+- **matcher argument** refines matcher
+
+**More assertion examples**
+
+```
+expect(element.textContent).toBe('hello');
+expect(elementsArray).toHaveLength(7);
+
+```
+
+**jest-dom**
+
+- comes with create-react-app
+- src/setupTests.js imports it before each test, makes matchers avaliable
+- DOM-based matchers
+  - examples: toBeVisible() or toBeChecked()
