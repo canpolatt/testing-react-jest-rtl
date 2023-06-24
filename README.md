@@ -160,3 +160,10 @@ expect(elementsArray).toHaveLength(7);
     - developer, QA, business partners, etc
   - defines process for different grous to interact
 - Only developers? so TDD
+
+**Accessibility and Finding Elements**
+
+- Testing Library recommends finding elements by accessibility handles
+  - https://testing-library.com/docs/queries/about/#priority
+- cra's example test uses _getByText_
+  - ok for non-interactive elements
