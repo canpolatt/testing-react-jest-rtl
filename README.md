@@ -151,3 +151,12 @@ expect(elementsArray).toHaveLength(7);
   - ⭐️ Close to how users interact with software
   - ⭐️ Robust tests
   - 👎 More difficult to debug failing tests
+
+**TDD vs BDD**
+
+- Testing Library encourages testing _behavior_ over implementation
+- BDD is very explicitly defined
+  - involves collaboration between lots of roles
+    - developer, QA, business partners, etc
+  - defines process for different grous to interact
+- Only developers? so TDD
