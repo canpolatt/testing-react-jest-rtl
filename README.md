@@ -167,3 +167,8 @@ expect(elementsArray).toHaveLength(7);
   - https://testing-library.com/docs/queries/about/#priority
 - cra's example test uses _getByText_
   - ok for non-interactive elements
+  - better: _getByRole_
+- Roles documentation: https://www.w3.org/TR/wai-aria/#role_definitions
+  - some elements have built-in roles: _button_, _a_
+- Can't find an element like a screen reader would?
+  - Then your app isn't friendly to screen readers
