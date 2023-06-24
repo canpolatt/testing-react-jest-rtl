@@ -135,3 +135,19 @@ expect(elementsArray).toHaveLength(7);
   - Functional tests is that you're not testing your code, you're testing behavior
 - Acceptance / End-to-end(E2E) Tests
   - Use actual browser and server(Cypress,Selenium)
+
+**Functional Testing**
+
+- different mindset from unit testing
+- In Unit test
+
+  - Isolated: mock dependencies, test internals
+  - ⭐️ Very easy to pinpoint failures
+  - 👎 Further from how users itneract with software
+  - 👎 More likely to break with refactoring
+
+- In Functional test
+  - Include all relevant units, test, behavior
+  - ⭐️ Close to how users interact with software
+  - ⭐️ Robust tests
+  - 👎 More difficult to debug failing tests
