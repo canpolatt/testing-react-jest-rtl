@@ -1,6 +1,6 @@
 # Testing React with Jest and React Testing Library (RTL)
 
-<div>
+<div align="center">
     <a href="https://testing-library.com/docs/react-testing-library/intro/"><img src="./assets/1.png" width="100" height="100"></a>
     <a href="https://jestjs.io/docs/getting-started"><img src="./assets/2.png" width="100" height="100"></a>
 </div>
