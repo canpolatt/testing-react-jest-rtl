@@ -179,5 +179,29 @@ expect(elementsArray).toHaveLength(7);
   - Used by several components
   - Complex logic
 - Unit test if
+
   - Complex logic difficult to test via functional tests
   - Too many edge cases
+
+  **When to Unit Test?**
+
+  - When to unit test?
+    - _replaceCamelWithSpaces_ is pretty simple
+    - could be covered by functional tests on button
+  - For more complicated functions, unit tests help with:
+    - covering all possible edge cases
+    - determining what caused functional tests to fail
+  - Issue with functional tests:
+    - high-level makes them resistant to refactors
+    - high-level makes them difficult to diagnose
+
+**Review: color-button**
+
+- Test interactivity using _fireEvent_
+- jest-dom assertions:
+  - _toBeEnabled()_
+  - _toBeDisabled()_
+  - _toBeChecked()_
+- getByRole option { name: }
+- jest _describe_ to group tests
+- Unit testing functions
